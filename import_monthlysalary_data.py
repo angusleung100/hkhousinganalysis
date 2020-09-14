@@ -4,17 +4,22 @@ import pandas as panda
 import pymysql
 
 def removeFootnoteTags(textSample):
-    newText = textSample;
+    newText = "";
 
-    i = len(textSample) - 1;
+    cursor = 0
+    ignoreChar = False
 
-    if(textSample[i] == ")"):
-        for x in range(i, 0, -1):
-            if(textSample[x] == "("):
-                newText = newText.replace(textSample[x], "")
-                break;
-            else:
-                newText = newText.replace(textSample[x], "")
+    while cursor < len(textSample):
+
+        if "(" in textSample[cursor]:
+            ignoreChar = True
+        if ")" in textSample[cursor]:
+            ignoreChar = False
+
+
+        if ignoreChar is not True:
+            newText = newText + textSample[cursor]
+        cursor += 1
     return newText
 
 #Create database connection
@@ -84,19 +89,32 @@ for sheet in workbookSheets.sheet_names:
                         break;
                     else:
                         subcategoryName = str(earnerAllCategories[subcategoryIndexTarget])
+                        
+                        #Check and strip punctuation
+                        punctuationBlacklist = "!@#$%^&*_+-=/\|.,;:≥)";
+                        for punctuationCursor in subcategoryName:
+                            if punctuationCursor in punctuationBlacklist:
+                                subcategoryName = subcategoryName.replace(punctuationCursor, "")
+
+                        #Check for numbers in format "( number )" and remove
+                        subcategoryName = removeFootnoteTags(subcategoryName)
+
                         subcategoryName = subcategoryName.replace(" ", "_")
+                        
+                        subcategoryName = subcategoryName.lower()
+                        
+                        
 
                         subcategoryMonthlySalary = earnerMonthlySalaries[subcategoryIndexTarget];
 
                         subcategoryMonthlySalaryYoYPercentChange = earnerMonthlySalariesYoYPercentChange[subcategoryIndexTarget]
 
-                        #Check for numbers in format "( number )" and remove
-                        subcategoryName = removeFootnoteTags(subcategoryName)
+
 
                         #Remove empty rows that include nan
                         if(subcategoryName != "nan"):
                             #Display output
-                            print(categoryName," - ",subcategoryName, " | " ,subcategoryMonthlySalary , " | ", subcategoryMonthlySalaryYoYPercentChange)
+                            print(categoryName,"-",subcategoryName, "|" ,subcategoryMonthlySalary , "|", subcategoryMonthlySalaryYoYPercentChange)
                         
                         subcategoryIndexTarget += 1
                         
