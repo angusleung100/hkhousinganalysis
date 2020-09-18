@@ -1,0 +1,212 @@
+{
+    "header": {
+        "success": true,
+        "err_code": "0000",
+        "err_msg": "No error found"
+    },
+    "result": {
+        "datasize": 20,
+        "records": [
+            {
+                "end_of_month": "2020-08",
+                "nominal_gdp": null,
+                "real_gdp": null,
+                "gov_consol_bal": null,
+                "composite_cpi": null,
+                "unemploy_rate": null,
+                "curr_acc_bal": null,
+                "fc_reserve": null
+            },
+            {
+                "end_of_month": "2020-07",
+                "nominal_gdp": null,
+                "real_gdp": null,
+                "gov_consol_bal": -74689.7,
+                "composite_cpi": 108.187,
+                "unemploy_rate": 6.1,
+                "curr_acc_bal": null,
+                "fc_reserve": 449.99
+            },
+            {
+                "end_of_month": "2020-06",
+                "nominal_gdp": 637851,
+                "real_gdp": 617392,
+                "gov_consol_bal": -64278.5,
+                "composite_cpi": 111.039,
+                "unemploy_rate": 6.2,
+                "curr_acc_bal": null,
+                "fc_reserve": 445.891
+            },
+            {
+                "end_of_month": "2020-05",
+                "nominal_gdp": null,
+                "real_gdp": null,
+                "gov_consol_bal": -28625.2,
+                "composite_cpi": 111.089,
+                "unemploy_rate": 5.9,
+                "curr_acc_bal": null,
+                "fc_reserve": 442.357
+            },
+            {
+                "end_of_month": "2020-04",
+                "nominal_gdp": null,
+                "real_gdp": null,
+                "gov_consol_bal": -16096.1,
+                "composite_cpi": 111.633,
+                "unemploy_rate": 5.2,
+                "curr_acc_bal": null,
+                "fc_reserve": 441.32
+            },
+            {
+                "end_of_month": "2020-03",
+                "nominal_gdp": 661590,
+                "real_gdp": 635722,
+                "gov_consol_bal": -29773,
+                "composite_cpi": 111.303,
+                "unemploy_rate": 4.2,
+                "curr_acc_bal": -8864,
+                "fc_reserve": 437.636
+            },
+            {
+                "end_of_month": "2020-02",
+                "nominal_gdp": null,
+                "real_gdp": null,
+                "gov_consol_bal": -5851.7,
+                "composite_cpi": 111.518,
+                "unemploy_rate": 3.7,
+                "curr_acc_bal": null,
+                "fc_reserve": 445.711
+            },
+            {
+                "end_of_month": "2020-01",
+                "nominal_gdp": null,
+                "real_gdp": null,
+                "gov_consol_bal": 75086.2,
+                "composite_cpi": 109.643,
+                "unemploy_rate": 3.4,
+                "curr_acc_bal": null,
+                "fc_reserve": 445.682
+            },
+            {
+                "end_of_month": "2019-12",
+                "nominal_gdp": 744207,
+                "real_gdp": 723789,
+                "gov_consol_bal": 95140.3,
+                "composite_cpi": 111.442,
+                "unemploy_rate": 3.3,
+                "curr_acc_bal": 41702,
+                "fc_reserve": 441.366
+            },
+            {
+                "end_of_month": "2019-11",
+                "nominal_gdp": null,
+                "real_gdp": null,
+                "gov_consol_bal": -25748.2,
+                "composite_cpi": 111.111,
+                "unemploy_rate": 3.2,
+                "curr_acc_bal": null,
+                "fc_reserve": 434.249
+            },
+            {
+                "end_of_month": "2019-10",
+                "nominal_gdp": null,
+                "real_gdp": null,
+                "gov_consol_bal": -24072.3,
+                "composite_cpi": 111.048,
+                "unemploy_rate": 3,
+                "curr_acc_bal": null,
+                "fc_reserve": 440.633
+            },
+            {
+                "end_of_month": "2019-09",
+                "nominal_gdp": 719326,
+                "real_gdp": 698211,
+                "gov_consol_bal": -53370.9,
+                "composite_cpi": 110.879,
+                "unemploy_rate": 2.9,
+                "curr_acc_bal": 71757,
+                "fc_reserve": 438.685
+            },
+            {
+                "end_of_month": "2019-08",
+                "nominal_gdp": null,
+                "real_gdp": null,
+                "gov_consol_bal": -14837.3,
+                "composite_cpi": 110.888,
+                "unemploy_rate": 2.9,
+                "curr_acc_bal": null,
+                "fc_reserve": 432.843
+            },
+            {
+                "end_of_month": "2019-07",
+                "nominal_gdp": null,
+                "real_gdp": null,
+                "gov_consol_bal": -12330.4,
+                "composite_cpi": 110.686,
+                "unemploy_rate": 2.9,
+                "curr_acc_bal": null,
+                "fc_reserve": 448.441
+            },
+            {
+                "end_of_month": "2019-06",
+                "nominal_gdp": 694280,
+                "real_gdp": 678398,
+                "gov_consol_bal": -10492.4,
+                "composite_cpi": 110.224,
+                "unemploy_rate": 2.8,
+                "curr_acc_bal": 33459,
+                "fc_reserve": 445.689
+            },
+            {
+                "end_of_month": "2019-00",
+                "nominal_gdp": 2865679,
+                "real_gdp": 2799736,
+                "gov_consol_bal": -10574.6919999999,
+                "composite_cpi": 110.113916666667,
+                "unemploy_rate": 2.9,
+                "curr_acc_bal": 176005,
+                "fc_reserve": 441.366
+            },
+            {
+                "end_of_month": "2018-00",
+                "nominal_gdp": 2835161,
+                "real_gdp": 2835161,
+                "gov_consol_bal": 67948.817,
+                "composite_cpi": 107.034166666667,
+                "unemploy_rate": 2.8,
+                "curr_acc_bal": 105942,
+                "fc_reserve": 424.62
+            },
+            {
+                "end_of_month": "2017-00",
+                "nominal_gdp": 2659384,
+                "real_gdp": 2756666,
+                "gov_consol_bal": 148973.304,
+                "composite_cpi": 104.521333333333,
+                "unemploy_rate": 3.1,
+                "curr_acc_bal": 121840,
+                "fc_reserve": 431.442
+            },
+            {
+                "end_of_month": "2016-00",
+                "nominal_gdp": 2490438,
+                "real_gdp": 2655977,
+                "gov_consol_bal": 111072.707,
+                "composite_cpi": 103.00025,
+                "unemploy_rate": 3.4,
+                "curr_acc_bal": 98485,
+                "fc_reserve": 386.294
+            },
+            {
+                "end_of_month": "2015-00",
+                "nominal_gdp": 2398280,
+                "real_gdp": 2599581,
+                "gov_consol_bal": 14373.517,
+                "composite_cpi": 100.574,
+                "unemploy_rate": 3.3,
+                "curr_acc_bal": 79553,
+                "fc_reserve": 358.773
+            }
+        ]
+    }
+}

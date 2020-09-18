@@ -1,13 +1,13 @@
 <?php
 
     //Get HKMA Capital Markets data
-    $capitalMarketsDataFeed = json_decode(file_get_contents("./hkma_data/capitalmarkets_stats.json"), true);
+    $capitalMarketsDataFeed = json_decode(file_get_contents("../raw_data/hkma_data/capitalmarkets_stats.json"), true);
 
     //Get HKMA Monetary data
-    $monetaryDataFeed = json_decode(file_get_contents("hkma_data/monetary_stats.json"), true);
+    $monetaryDataFeed = json_decode(file_get_contents("../raw_data/hkma_data/monetary_stats.json"), true);
 
     //Get HKMA Economics data
-    $econDataFeed = json_decode(file_get_contents("hkma_data/econ_stats.json"), true);
+    $econDataFeed = json_decode(file_get_contents("../raw_data/hkma_data/econ_stats.json"), true);
 
     //Create database connection
     $host = "localhost";

@@ -44,7 +44,7 @@ password = "";
 connection = pymysql.connect(host=host, user=username, password=password, db=database)
 
 #Import data from Monthly Salary HK Stats
-workbookSheets = panda.ExcelFile("censtats_data/monthlyPay_data.xlsx")
+workbookSheets = panda.ExcelFile("../raw_data/censtats_data/monthlyPay_data.xlsx")
 
 
 cursor = connection.cursor()
@@ -65,7 +65,7 @@ else:
 
             
 
-            monthlySalariesDataFeed = panda.read_excel("censtats_data/monthlyPay_data.xlsx", sheet_name=sheet)
+            monthlySalariesDataFeed = panda.read_excel("../raw_data/censtats_data/monthlyPay_data.xlsx", sheet_name=sheet)
 
 
 
@@ -180,7 +180,7 @@ else:
 
 for sheet in workbookSheets.sheet_names:
     if(sheet != "Index"):
-        monthlySalariesDataFeed = panda.read_excel("censtats_data/monthlyPay_data.xlsx", sheet_name=sheet)
+        monthlySalariesDataFeed = panda.read_excel("../raw_data/censtats_data/monthlyPay_data.xlsx", sheet_name=sheet)
 
 
         print("Checking sheet"+ sheet +"\n\n")
@@ -324,7 +324,7 @@ for sheet in workbookSheets.sheet_names:
 for sheet in workbookSheets.sheet_names:
     if(sheet != "Index"):
 
-        monthlySalariesDataFeed = panda.read_excel("censtats_data/monthlyPay_data.xlsx", sheet_name=sheet)
+        monthlySalariesDataFeed = panda.read_excel("../raw_data/censtats_data/monthlyPay_data.xlsx", sheet_name=sheet)
         
         sheetKeys = []
         

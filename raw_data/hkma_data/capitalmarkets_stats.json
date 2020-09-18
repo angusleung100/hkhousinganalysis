@@ -1,0 +1,212 @@
+{
+    "header": {
+        "success": true,
+        "err_code": "0000",
+        "err_msg": "No error found"
+    },
+    "result": {
+        "datasize": 20,
+        "records": [
+            {
+                "end_of_month": "2020-07",
+                "hkd_drmkt_outstand_efbn": 1067849,
+                "hkd_drmkt_outstand_odrinst": null,
+                "hkd_drmkt_outstand_total": null,
+                "hkd_drmkt_new_non_efbn": null,
+                "eq_mkt_hs_index": 24595.35,
+                "eq_mkt_ttl_stock_cap": 40353794.107656,
+                "eq_mkt_fund_raised": 75753.10933
+            },
+            {
+                "end_of_month": "2020-06",
+                "hkd_drmkt_outstand_efbn": 1067705,
+                "hkd_drmkt_outstand_odrinst": 1111327.27406101,
+                "hkd_drmkt_outstand_total": 2179032.27406101,
+                "hkd_drmkt_new_non_efbn": 234508.053639,
+                "eq_mkt_hs_index": 24427.19,
+                "eq_mkt_ttl_stock_cap": 37905667.147791,
+                "eq_mkt_fund_raised": 93698.342849
+            },
+            {
+                "end_of_month": "2020-05",
+                "hkd_drmkt_outstand_efbn": 1067326,
+                "hkd_drmkt_outstand_odrinst": null,
+                "hkd_drmkt_outstand_total": null,
+                "hkd_drmkt_new_non_efbn": null,
+                "eq_mkt_hs_index": 22961.47,
+                "eq_mkt_ttl_stock_cap": 33984729.516599,
+                "eq_mkt_fund_raised": 21707.853655
+            },
+            {
+                "end_of_month": "2020-04",
+                "hkd_drmkt_outstand_efbn": 1077050,
+                "hkd_drmkt_outstand_odrinst": null,
+                "hkd_drmkt_outstand_total": null,
+                "hkd_drmkt_new_non_efbn": null,
+                "eq_mkt_hs_index": 24643.59,
+                "eq_mkt_ttl_stock_cap": 35024523.129028,
+                "eq_mkt_fund_raised": 21792.547099
+            },
+            {
+                "end_of_month": "2020-03",
+                "hkd_drmkt_outstand_efbn": 1086324,
+                "hkd_drmkt_outstand_odrinst": 1085949.14245501,
+                "hkd_drmkt_outstand_total": 2172273.14245501,
+                "hkd_drmkt_new_non_efbn": 213558.917404001,
+                "eq_mkt_hs_index": 23603.48,
+                "eq_mkt_ttl_stock_cap": 32801919.920475,
+                "eq_mkt_fund_raised": 33162.098958
+            },
+            {
+                "end_of_month": "2020-02",
+                "hkd_drmkt_outstand_efbn": 1085585,
+                "hkd_drmkt_outstand_odrinst": null,
+                "hkd_drmkt_outstand_total": null,
+                "hkd_drmkt_new_non_efbn": null,
+                "eq_mkt_hs_index": 26129.93,
+                "eq_mkt_ttl_stock_cap": 36207416.805915,
+                "eq_mkt_fund_raised": 7882.915523
+            },
+            {
+                "end_of_month": "2020-01",
+                "hkd_drmkt_outstand_efbn": 1084305,
+                "hkd_drmkt_outstand_odrinst": null,
+                "hkd_drmkt_outstand_total": null,
+                "hkd_drmkt_new_non_efbn": null,
+                "eq_mkt_hs_index": 26312.63,
+                "eq_mkt_ttl_stock_cap": 41599170.790997,
+                "eq_mkt_fund_raised": 54072.669897
+            },
+            {
+                "end_of_month": "2019-12",
+                "hkd_drmkt_outstand_efbn": 1082062,
+                "hkd_drmkt_outstand_odrinst": 1083801.15320101,
+                "hkd_drmkt_outstand_total": 2165863.15320101,
+                "hkd_drmkt_new_non_efbn": 148007.016831,
+                "eq_mkt_hs_index": 28189.75,
+                "eq_mkt_ttl_stock_cap": 38165037.412109,
+                "eq_mkt_fund_raised": 35144.762684
+            },
+            {
+                "end_of_month": "2019-11",
+                "hkd_drmkt_outstand_efbn": 1080564,
+                "hkd_drmkt_outstand_odrinst": null,
+                "hkd_drmkt_outstand_total": null,
+                "hkd_drmkt_new_non_efbn": null,
+                "eq_mkt_hs_index": 26346.49,
+                "eq_mkt_ttl_stock_cap": 35709400.828909,
+                "eq_mkt_fund_raised": 158493.768827
+            },
+            {
+                "end_of_month": "2019-10",
+                "hkd_drmkt_outstand_efbn": 1079022,
+                "hkd_drmkt_outstand_odrinst": null,
+                "hkd_drmkt_outstand_total": null,
+                "hkd_drmkt_new_non_efbn": null,
+                "eq_mkt_hs_index": 26906.72,
+                "eq_mkt_ttl_stock_cap": 31791224.81692,
+                "eq_mkt_fund_raised": 24555.378787
+            },
+            {
+                "end_of_month": "2019-09",
+                "hkd_drmkt_outstand_efbn": 1076775,
+                "hkd_drmkt_outstand_odrinst": 1093944.04130201,
+                "hkd_drmkt_outstand_total": 2170719.04130201,
+                "hkd_drmkt_new_non_efbn": 182458.928135,
+                "eq_mkt_hs_index": 26092.27,
+                "eq_mkt_ttl_stock_cap": 30642694.764605,
+                "eq_mkt_fund_raised": 50805.209694
+            },
+            {
+                "end_of_month": "2019-08",
+                "hkd_drmkt_outstand_efbn": 1075226,
+                "hkd_drmkt_outstand_odrinst": null,
+                "hkd_drmkt_outstand_total": null,
+                "hkd_drmkt_new_non_efbn": null,
+                "eq_mkt_hs_index": 25724.73,
+                "eq_mkt_ttl_stock_cap": 29999337.832757,
+                "eq_mkt_fund_raised": 14552.060764
+            },
+            {
+                "end_of_month": "2019-07",
+                "hkd_drmkt_outstand_efbn": 1073597,
+                "hkd_drmkt_outstand_odrinst": null,
+                "hkd_drmkt_outstand_total": null,
+                "hkd_drmkt_new_non_efbn": null,
+                "eq_mkt_hs_index": 27777.75,
+                "eq_mkt_ttl_stock_cap": 32085697.868286,
+                "eq_mkt_fund_raised": 21464.990901
+            },
+            {
+                "end_of_month": "2019-06",
+                "hkd_drmkt_outstand_efbn": 1071332,
+                "hkd_drmkt_outstand_odrinst": 1121160.97613001,
+                "hkd_drmkt_outstand_total": 2192492.97613001,
+                "hkd_drmkt_new_non_efbn": 207526.355434,
+                "eq_mkt_hs_index": 28542.62,
+                "eq_mkt_ttl_stock_cap": 32726647.809737,
+                "eq_mkt_fund_raised": 43571.644674
+            },
+            {
+                "end_of_month": "2019-05",
+                "hkd_drmkt_outstand_efbn": 1069849,
+                "hkd_drmkt_outstand_odrinst": null,
+                "hkd_drmkt_outstand_total": null,
+                "hkd_drmkt_new_non_efbn": null,
+                "eq_mkt_hs_index": 26901.09,
+                "eq_mkt_ttl_stock_cap": 31039492.359813,
+                "eq_mkt_fund_raised": 14771.795603
+            },
+            {
+                "end_of_month": "2019-00",
+                "hkd_drmkt_outstand_efbn": 1082062,
+                "hkd_drmkt_outstand_odrinst": 1083801.15320101,
+                "hkd_drmkt_outstand_total": 2165863.15320101,
+                "hkd_drmkt_new_non_efbn": 790025.203331001,
+                "eq_mkt_hs_index": 28189.75,
+                "eq_mkt_ttl_stock_cap": 38165037.412109,
+                "eq_mkt_fund_raised": 454247.284892
+            },
+            {
+                "end_of_month": "2018-00",
+                "hkd_drmkt_outstand_efbn": 1062715,
+                "hkd_drmkt_outstand_odrinst": 1056354.34581801,
+                "hkd_drmkt_outstand_total": 2119069.34581801,
+                "hkd_drmkt_new_non_efbn": 859821.194395,
+                "eq_mkt_hs_index": 25845.7,
+                "eq_mkt_ttl_stock_cap": 29909421.587297,
+                "eq_mkt_fund_raised": 544134.824051
+            },
+            {
+                "end_of_month": "2017-00",
+                "hkd_drmkt_outstand_efbn": 1048479,
+                "hkd_drmkt_outstand_odrinst": 753609.66855301,
+                "hkd_drmkt_outstand_total": 1802088.66855301,
+                "hkd_drmkt_new_non_efbn": 334871,
+                "eq_mkt_hs_index": 29919.15,
+                "eq_mkt_ttl_stock_cap": 33998836.607023,
+                "eq_mkt_fund_raised": 581385.552061
+            },
+            {
+                "end_of_month": "2016-00",
+                "hkd_drmkt_outstand_efbn": 963098,
+                "hkd_drmkt_outstand_odrinst": 767468.30055301,
+                "hkd_drmkt_outstand_total": 1730566.30055301,
+                "hkd_drmkt_new_non_efbn": 362942.264,
+                "eq_mkt_hs_index": 22000.56,
+                "eq_mkt_ttl_stock_cap": 24761306.365612,
+                "eq_mkt_fund_raised": 490054.004836
+            },
+            {
+                "end_of_month": "2015-00",
+                "hkd_drmkt_outstand_efbn": 828421,
+                "hkd_drmkt_outstand_odrinst": 688616.24335301,
+                "hkd_drmkt_outstand_total": 1517037.24335301,
+                "hkd_drmkt_new_non_efbn": 251810.592,
+                "eq_mkt_hs_index": 21914.4,
+                "eq_mkt_ttl_stock_cap": 24683730.694722,
+                "eq_mkt_fund_raised": 1115642.728453
+            }
+        ]
+    }
+}
