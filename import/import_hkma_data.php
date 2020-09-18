@@ -61,13 +61,13 @@
 
     if(!($checkColumnsMatchResultKeys === array_keys($capitalMarketsDataFeed['result']['records'][0])))
     {
-        $addNewColumnsQuery = "ALTER TABLE `hkma_capitalmarkets_data` ADD ";
+        $addNewColumnsQuery = "ALTER TABLE `hkma_capitalmarkets_data` ";
 
         foreach(array_keys($capitalMarketsDataFeed['result']['records'][0]) as $testColumn)
         {
             if(!(in_array($testColumn, $checkColumnsMatchResultKeys)))
             {
-                $addNewColumnsQuery .= "`" . $testColumn . "` VARCHAR(255) NOT NULL,";
+                $addNewColumnsQuery .= " ADD `" . $testColumn . "` VARCHAR(255) NOT NULL,";
             }
         }
 
