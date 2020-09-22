@@ -69,8 +69,8 @@ else:
 
 
 
-            createAmountTableQuery = createAmountTableQuery + "`year`" + " VARCHAR(255) NULL,"
-            createChangeTableQuery = createChangeTableQuery + "`year`" + " VARCHAR(255) NULL,"
+            createAmountTableQuery = createAmountTableQuery + "`year`" + " VARCHAR(255) NOT NULL,"
+            createChangeTableQuery = createChangeTableQuery + "`year`" + " VARCHAR(255) NOT NULL,"
             #Get list of column names
             columns = list(monthlySalariesDataFeed)
 
