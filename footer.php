@@ -72,6 +72,6 @@
 
 
 <footer>
-  <p>Made by <a href="https://www.linkedin.com/in/angus-leung/">Angus Leung</a> | <a href="https://github.com/angusleung100">Github</a> | Housing Data: <a href="#">RVD (HK Gov)</a> | Economic Data: <a href="#">World Bank</a></p>
+  <p>Made by <a href="https://www.linkedin.com/in/angus-leung/">Angus Leung</a> | <a href="https://github.com/angusleung100">Github</a> | HK Data: <a href="#">RVD (HK Gov)</a></p>
 </footer>
 </html>

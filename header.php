@@ -19,7 +19,7 @@
         <a href="charts.php" class="button">Data Charts</a>
         <a href="markets.php" class="button">HK Capital Markets</a>
         <a href="about.php" class="button">About</a>
-        <a href="https://github.com/angusleung100/hkhousinganalysis"><button>Github</button></a>
+        <a href="https://github.com/angusleung100/"><button>Github</button></a>
     </header>
     <h1><?php echo $pageTitle; ?></h1>
     <hr>
