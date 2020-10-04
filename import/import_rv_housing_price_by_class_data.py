@@ -15,7 +15,18 @@ connection = pymysql.connect(host=host, user=username, password=password, db=dat
 cursor = connection.cursor()
 
 
-def getClassPricesForTerritory(territory, fileLoc):
+def getClassPricesForTerritory(territory, tableName, fileLoc):
+    
+    #Check if table exists an create if needed
+    checkTableExistsQuery = cursor.execute("SHOW TABLES WHERE `Tables_in_hkhousinganalysis` = '" + tableName + "';")
+
+    if checkTableExistsQuery > 0:
+        print("Table exists")
+    else:
+        createPriceByClassTableQuery = "CREATE TABLE `" + tableName + "` (`year` VARCHAR(255) NOT NULL, `Class_A` VARCHAR(255) NOT NULL,`Class_B` VARCHAR(255) NOT NULL,`Class_C` VARCHAR(255) NOT NULL,`Class_D` VARCHAR(255) NOT NULL,`Class_E` VARCHAR(255) NOT NULL, PRIMARY KEY (`year`));"
+        createPriceByClassTable = cursor.execute(createPriceByClassTableQuery)
+        print("RV Price By Class Table Created")
+
     dataSheet = panda.read_csv(fileLoc)
 
     datasheetColumnNames = list(dataSheet.columns)
@@ -53,53 +64,69 @@ def getClassPricesForTerritory(territory, fileLoc):
 
 
     #Import query template
-    importBulkMonthlyPayAmountDataQuery = "INSERT IGNORE INTO `rv_price_by_class_data` (`year`,`Class_A`,`Class_B`,`Class_C`,`Class_D`,`Class_E`) VALUES "
+    importBulkHousingPriceDataQuery = "INSERT IGNORE INTO `" + tableName + "` (`year`,`Class_A`,`Class_B`,`Class_C`,`Class_D`,`Class_E`) VALUES "
 
     print("\n\n"+territory+"\n====")
+
+    yearRowTarget = 1   
+
     for year in yearColumn:
+
         if(year != "Year"):
-            print("\n\n"+year+"\n----")
+            #print("\n\n"+year+"\n----")
+
+            importBulkHousingPriceDataQuery = importBulkHousingPriceDataQuery + "('" + str(int(year)) + "'," 
             #for pricePerSqrM in priceColumns:
             for columnName in datasheetColumnNames:
                 
                 column = dataSheet[columnName]
                 if "Remarks" not in column[0]:
+                    
                     if filterTerritory in column[0] and filterTerritory != "Kow":   #Filter and target HK, NT, and NK
                         classification = column[0][0:7]
                         classification = classification.replace(" ","_")
 
-                        print(classification)
+                        importBulkHousingPriceDataQuery = importBulkHousingPriceDataQuery + "'" + str(column[yearRowTarget]) + "',"
             
                     if filterTerritory in column[0] and filterTerritory == "Kow" and "New K" not in column[0]:  #Filter and target Kowloon territory
                         classification = column[0][0:7]
                         classification = classification.replace(" ","_")
                             
-                        print(classification)
+                        importBulkHousingPriceDataQuery = importBulkHousingPriceDataQuery + "'" + str(column[yearRowTarget]) + "',"
+                    
 
+            importBulkHousingPriceDataQuery = importBulkHousingPriceDataQuery[:-1] + "),"
+            yearRowTarget += 1
+    
+    importBulkHousingPriceDataQuery = importBulkHousingPriceDataQuery[:-1] + ";"
+    print(importBulkHousingPriceDataQuery)
+    importBulkHousingPriceData = cursor.execute(importBulkHousingPriceDataQuery)
 
+    connection.commit()
 
+    
+    print("Prices imported to database")
 
 #Import data from housing price by class sheet
 fileNameOne = "../raw_data/rv_data/price_by_class_annual_86-98.csv"
 fileNameTwo = "../raw_data/rv_data/price_by_class_annual_99-now.csv"
 
-territoryList = ["Hong Kong", "Kowloon", "New Kowloon", "New Territories"]
+territoryList = ["Hong Kong", "Kowloon", "New Territories", "New Kowloon"]
 
-#Check if table exists an create if needed
-checkTableExistsQuery = cursor.execute("SHOW TABLES WHERE `Tables_in_hkhousinganalysis` = 'rv_price_by_class_data';")
-
-if checkTableExistsQuery > 0:
-    print("Table exists")
-else:
-    createPriceByClassTableQuery = "CREATE TABLE `rv_price_by_class_data` (`year` VARCHAR(255) NOT NULL, `Class_A` VARCHAR(255) NOT NULL,`Class_B` VARCHAR(255) NOT NULL,`Class_C` VARCHAR(255) NOT NULL,`Class_D` VARCHAR(255) NOT NULL,`Class_E` VARCHAR(255) NOT NULL, PRIMARY KEY (`year`));"
-    createPriceByClassTable = cursor.execute(createPriceByClassTableQuery)
-    print("RV Price By Class Table Created")
+tableList = ["rv_price_by_class_data_hki", "rv_price_by_class_data_kow", "rv_price_by_class_data_nkow", "rv_price_by_class_data_nt"]
 
 #Import bulk data into database
 
+tableTarget = 0 # Select which table to put into
 
 for territorySelect in territoryList:   #Pre-1998 data
-    getClassPricesForTerritory(territorySelect, fileNameOne)
+    getClassPricesForTerritory(territorySelect, tableList[tableTarget], fileNameOne)
+    tableTarget += 1
 
-""" for territorySelect in territoryList:   #1999 onward data
-    print(getClassPricesForTerritory(territorySelect, fileNameTwo)) """
+
+tableTarget = 0 # Select which table to put into
+
+for territorySelect in territoryList:   #1999 onward data
+    if territorySelect is not "New Kowloon":
+        getClassPricesForTerritory(territorySelect, tableList[tableTarget], fileNameTwo)
+        tableTarget += 1
