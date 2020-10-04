@@ -9,8 +9,7 @@ was created by <a href="https://www.linkedin.com/in/angus-leung/">Angus Leung</a
 
 <h3>Features Available:</h3>
 <ul>
-    <li>Display HK economic data</li>
-    <li>Display chart comparing the Hang Seng Index (HSI) to interest rates set by the Hong Kong Monetary Authority (HKMA)</li>
+    <li>Display HK Hang Seng Index and 10-year government bond yield versus savings account interest rates.</li>
 </ul>
 <h3>About the data</h3>
 
