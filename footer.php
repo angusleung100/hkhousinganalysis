@@ -117,7 +117,7 @@
                         </div>
                         <div class="section">
                             <small>
-                                Data displayed and provided are either monthly or yearly data, not necessarily up-to-date for the current month. HK Housing Analysis will note what time interval is currently being displayed for data, as well as what date is the data shown for.
+                                Data displayed and provided are either monthly or yearly data, not necessarily up-to-date for the current month. HKHousingAnalysis will note what time interval is currently being displayed for data, as well as what date is the data shown for.
                                 <br><br>
                                 Data by third-party providers is not guaranteed to be fully accurate and should only be used as reference and not financial advice whatsoever.
                                 Please refer to a real estate agent, financial advisor, or accredited person(s) on your current financial situation. HK Housing Analysis is not liable or responsible
@@ -140,6 +140,6 @@
 
 
 <footer>
-  <p>Made by <a href="https://www.linkedin.com/in/angus-leung/">Angus Leung</a> | <a href="https://github.com/angusleung100">Github</a> | CM Data: <a href="https://apidocs.hkma.gov.hk/">HKMA</a> | Housing Data: <a href="https://www.rvd.gov.hk/en/property_market_statistics/index.html">RVD</a> | Salary Data: <a href="https://www.censtatd.gov.hk/hkstat/sub/sp210.jsp">CenStatd</a> | HK Data: <a href="https://data.gov.hk/en/">HK Gov</a></p>
+  <p>&copy; HKHousingAnalysis | Made by <a href="https://www.linkedin.com/in/angus-leung/">Angus Leung</a> | <a href="https://github.com/angusleung100">Github</a> | <a href="about.php">About</a></p>
 </footer>
 </html>
