@@ -13,8 +13,6 @@ I found that the HK housing problem is very evident and the income gap is always
 - Apache
 - [Mini.css](https://minicss.org/)
 - [Pandas](https://pandas.pydata.org/)
-- [Jupyter Notebook](https://jupyter.org/)
-- [Anaconda](https://www.anaconda.com/)
 
 - Trello
 
