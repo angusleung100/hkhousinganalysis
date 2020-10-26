@@ -17,5 +17,4 @@ This Jupyter Notebook should not be considered advice of any kind and you should
 
 Data is provided by official Government of Hong Kong departments and offices and are not guaranteed to be accurate and should only be used as reference. The data for this project is static and will not be updated in the future.
 
-Currently, there is a large difference between the average price per square foot on the RVD data versus the current HK housing market, so if you are actually looking for housing, you should probably visit an actual
-broker or real estate firm for up-to-date market prices.
+Update: Turns out the large difference was because I accidentally looked at prices in square foot instead of square meters. Since square meter is much larger than square foot, the price is much higher, making the average prices correct if converting from square meter to square foot.
