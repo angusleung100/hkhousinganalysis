@@ -3,6 +3,7 @@ Analyzing data acquired from data sets from the HK Government.
 
 ## Built With
 - [Jupyter Notebook](https://jupyter.org/)
+- [Pandas](https://pandas.pydata.org/)
 - [Anaconda](https://www.anaconda.com/)
 - MySQL
 
